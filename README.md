@@ -55,7 +55,3 @@ To show the links use this bookmarklet:
 ```javascript
 javascript:(function(){var allLinks=localStorage.getItem("allLinks").split("|");for(i=0;i<allLinks.length;i++){document.write(allLinks[i]+"<br>");}})();
 ```
-
-## Examples:
-https://www.youtube.com/watch?v=DOfKDtp-qcs  
-https://drive.google.com/file/d/0BwUdQy74dIrWWjk4QTJBU3g0dkk/view
