@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-#Author: Dmitry Radchenko. cybercrime@null.net
-#Telegram: @cybercrime
+#Author: Dmitry Radchenko. cybercrime @ null d0t net
 
 #Description: The tool for mass simple web vulnerabilities checks.
 
