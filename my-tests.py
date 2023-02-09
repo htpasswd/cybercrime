@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-#Author: Dmitry Radchenko. cybercrime@null.net
-#Telegram: @cybercrime
+#Author: Dmitry Radchenko. cybercrime @ null d0t net
 
 #Description: The tool for fast and simple web vulnerabilities checks.
 
@@ -1077,7 +1076,7 @@ def NiktoScanner():
 	subprocess.check_call("perl " + scriptdir + "/nikto/program/nikto.pl -h " + scanSite + ":" + scanPort, shell=True)
 	doneNext()
 def sitesOnTheHost():
-	scanHost = raw_input("On which host search for sites? \n(For example: www.washington.edu)\n")
+	scanHost = raw_input("On which host search for sites? \n(For example: www.example.com)\n")
 	if (scanHost is 'q') or scanHost is 'Q':
 		mainMenu()
 	if scanHost.endswith('/'):
@@ -1131,7 +1130,7 @@ def sqlmapGoogle():
 		ThreadsGoogleQuery = int(ThreadsGoogleQuery)
 	else:
 		whichGoogleQuery = raw_input("By which query search for SQLi vulnerable sites? *Fast checking (parameter --smart). \n"
-									"(For example " + bcolors.BOLD + "site:washington.edu inurl:\"php?q=\")" + bcolors.ENDC + "\n")
+									"(For example " + bcolors.BOLD + "site:example.com inurl:\"php?q=\")" + bcolors.ENDC + "\n")
 
 	gpage = 1
 
@@ -1246,7 +1245,7 @@ def dorkOwn(gpage, whichGoogleQuery):
 
 
 def sqlmapCrawl():
-	whichSiteCrawl = raw_input("On what site search for SQLi? (For example: http://washington.edu)\n")
+	whichSiteCrawl = raw_input("On what site search for SQLi? (For example: http://example.com)\n")
 	checkMenu(whichSiteCrawl)
 	crawlDepth = raw_input("How deep: (5*)\n") or "5"
 	checkMenu(crawlDepth)
